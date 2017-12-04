@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        {% block title %}{% endblock %}
+        
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <link href="{{ asset('http://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sorts+Mill+Goudy:400,400italic') }}" rel="stylesheet">
+
+        <!-- Mobile viewport optimized: h5bp.com/viewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- favicon.ico and apple-touch-icon.png -->
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+        <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon-57x57-iphone.png') }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/apple-touch-icon-72x72-ipad.png') }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/apple-touch-icon-114x114-iphone4.png') }}">
+
+        <link rel="stylesheet" href="{{ asset('style.css') }}">
+        <link rel="stylesheet" href="{{ asset('screen.css') }}">
+        <!-- custom CSS -->
+        <link rel="stylesheet" href="{{ asset('custom.css') }}">
+
+        <script>document.cookie = 'resolution=' + Math.max(screen.width, screen.height) + '; path=/';</script>
+        <!-- JS libs -->
+        <script src="{{ asset('js/libs/modernizr-2.5.3.min.js') }}"></script>
+        <script src="{{ asset('js/libs/respond.min.js') }}"></script>	
+        <script src="{{ asset('js/libs/jquery.min.js') }}"></script>			 
+
+        <!-- scripts -->
+        <script src="{{ asset('js/jquery.easing.1.3.min.js') }}"></script>
+        <script src="{{ asset('js/hoverIntent.js') }}"></script>
+        <script src="{{ asset('js/general.js') }}"></script>
+        <!-- sliders -->
+        <script src="{{ asset('js/slides.min.jquery.js') }}"></script>
+        <!-- range sliders -->
+        <script src="{{ asset('js/jquery.slider.bundle.js') }}"></script>
+        <script src="{{ asset('js/jquery.slider.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('css/jslider.css') }}">
+        <!-- custom input -->
+        <link href="{{ asset('css/customInput.css') }}" rel="stylesheet">
+        <script src="{{ asset('js/jquery.customInput.js') }}"></script>
+        <!-- datepicker -->
+        <link href="{{ asset('css/custom-theme/jquery-ui-1.8.20.custom.css') }}" rel="stylesheet">
+        <script src="{{ asset('js/jquery-ui-1.8.20.custom.min.js') }}"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $("#date_in, #date_out").datepicker({
+                    dateFormat: 'MM dd, yy',
+                    minDate: 0,
+                    showOtherMonths: true
+                });
+            });
+        </script>
+    </head>
+    <body>
+        {% block header %}
+            <div class="body_wrap homepage">
+
+                <div class="header">
+                    <div class="container_12">
+
+                        <div class="logo">
+                            <a href="{{ asset('index.html') }}"><img src="{{ asset('images/logo.png') }}" alt=""></a>
+                            <h1>Travel Agency - Premium WordPress Theme</h1>
+                        </div>
+
+                        <div class="header_right">
+
+                            <div class="topsearch">
+                                <form id="searchForm" action="#" method="get">
+                                    <input type="submit" id="searchSubmit" value="" class="btn-search">
+                                    <input type="text" name="stext" id="stext" value="" class="stext">                    
+                                </form>
+                            </div>  
+
+                            <div class="toplogin">
+                                <p><a href="{{ path('fos_user_security_login') }}">SIGN IN</a> <span class="separator">|</span> <a href="{{ path('fos_user_registration_register') }}">REGISTER</a></p>
+                            </div>    
+
+                            <div class="header_phone">
+                                <p>CALL US NOW: &nbsp; <strong>1-800-531-453</strong></p>
+                            </div>	        
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="topmenu">
+                            <ul class="dropdown">
+                                <li class="menu-level-0 menu-item-home current-menu-item"><a href="{{ path('pi_general_home') }}"><span>Home</span></a></li>
+                                <li class="menu-level-0 mega-nav"><a href="#"><span>Destinations</span></a>
+                                    <ul class="submenu-1">
+                                        <li class="menu-level-1"><a href="{{ path('pi_general_Holidays') }}"><img src="{{ asset('images/icons/continent_1.png') }}" width="80" height="68" alt=""> <span>North America</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>USA MAINLAND</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Canada</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Hawaii</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Alaska</span></a></li>                                 
+                                            </ul>
+                                        </li>
+                                        <li class="menu-level-1"><a href="{{ asset('offers-list.html') }}"><img src="{{ asset('images/icons/continent_2.png') }}" width="80" height="68" alt=""> <span>Central & South America</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Argentina</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Belize</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Bolivia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Brasil</span></a></li>    
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Chile & Easter Island</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Columbia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Costa Rica</span></a></li>  
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Ecuador</span></a></li>   
+                                                <li class="menu-level-2 more-nav"><a href="{{ asset('offers-list.html') }}"><span>See all Destinations</span></a></li>                                                          
+                                            </ul>
+                                        </li>
+                                        <li class="menu-level-1"><a href="{{ asset('offers-list.html') }}"><img src="{{ asset('images/icons/continent_3.png') }}" width="80" height="68" alt=""> <span>Africa & Middle East</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>South Africa</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Tanzania</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Tunisia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Maroco</span></a></li>    
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Egipt</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Kenya</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Dubai & UAE</span></a></li>  
+                                            </ul>
+                                        </li>
+                                        <li class="menu-level-1"><a href="{{ asset('offers-list.html') }}"><img src="{{ asset('images/icons/continent_4.png') }}" width="80" height="68" alt=""> <span>EUROPE</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>United Kingdom</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>France</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Greece</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Spain</span></a></li>    
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Germany</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Croatia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Romania</span></a></li>  
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Cyprus</span></a></li>
+                                                <li class="menu-level-2 more-nav"><a href="offers-list.') }}"><span>See all Destinations</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-level-1"><a href="{{ asset('offers-list.html') }}"><img src="{{ asset('images/icons/continent_5.png') }}" width="80" height="68" alt=""> <span>ASIA & SOUTH PACIFIC</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Australia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>China</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.') }}"><span>Philipinnes</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>India</span></a></li>    
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Indonesia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Malaysia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Singapore</span></a></li>  
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Thailand</span></a></li>
+                                                <li class="menu-level-2 more-nav"><a href="{{ asset('offers-list.html') }}"><span>See all Destinations</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-level-0"><a href="{{ path('pi_general_Holidays') }}"><span>Special Offers</span></a></li>
+                                <li class="menu-level-0"><a href="{{ asset('#') }}"><span>Holidays</span></a>
+                                    <ul class="submenu-1">
+                                        <li class="menu-level-1"><a href="{{ asset('offers-list.html') }}"><span>North America</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>USA MAINLAND</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Canada</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Hawaii</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Alaska</span></a></li>                                 
+                                            </ul>
+                                        </li>
+                                        <li class="menu-level-1"><a href="{{ asset('offers-list.html') }}"><span>Central & South America</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Argentina</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Belize</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Bolivia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Brasil</span></a></li>    
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Chile & Easter Island</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Columbia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Costa Rica</span></a></li>  
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Ecuador</span></a></li>                                    
+                                            </ul>
+                                        </li>
+                                        <li class="menu-level-1"><a href="{{ asset('offers-list.html') }}"><span>Africa & Middle East</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>South Africa</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Tanzania</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Tunisia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Maroco</span></a></li>    
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Egipt</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Kenya</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Dubai & UAE</span></a></li>  
+                                            </ul>
+                                        </li>
+                                        <li class="menu-level-1"><a href="{{ asset('offers-list.html') }}"><span>EUROPE</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>United Kingdom</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>France</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Greece</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Spain</span></a></li>    
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Germany</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Croatia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Romania</span></a></li>  
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Cyprus</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-level-1"><a href="{{ path('pi_general_Holidays') }}"><span>ASIA & SOUTH PACIFIC</span></a>
+                                            <ul class="submenu-2">
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Australia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>China</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Philipinnes</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>India</span></a></li>    
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Indonesia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Malaysia</span></a></li>
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Singapore</span></a></li>  
+                                                <li class="menu-level-2"><a href="{{ asset('offers-list.html') }}"><span>Thailand</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-level-0"><a href="{{ path('pi_general_hotels') }}"><span>Hotels</span></a></li>
+                                <li class="menu-level-0"><a href="{{ path('pi_general_billets') }}"><span>Flights</span></a></li>
+                                <li class="menu-level-0"><a href="{{ path('pi_general_blog') }}"><span>Our Blog</span></a></li>
+                                <li class="menu-level-0"><a href="{{ path('pi_general_contact_us') }}"><span>Contact us</span></a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                           
+                           
+                <!--/ header -->
+
+                
+
+            {% endblock %}
+        {% block body %}{% endblock %}
+        {% block footer %}
+            <!-- after content -->
+            <div class="after_content">
+                <div class="after_inner">
+                    <div class="container_12">
+
+                        <!--# widgets area, col 1 -->    
+                        <div class="widgetarea widget_col_1">
+
+                            <!-- widget_products -->
+                            <div class="widget-container widget_products">
+                                <div class="inner">
+                                    <h3>PROMO OF THE DAY:</h3>                    
+                                    <div class="prod_item">
+                                        <div class="prod_image"><a href="{{ asset('offer-details.html') }}"><img src="{{ asset('images/temp/offer_small_01.jpg') }}" width="140" height="98" alt=""></a></div>
+                                        <span class="price_box"><ins>$</ins><strong>1579</strong></span>
+                                        <div class="prod_title">
+                                            <a href="{{ asset('offer-details.html') }}"><strong>Hilton Opera House 5* 7 nights, flight included</strong></a><br>
+                                            <span><a href="{{ asset('offer-details.html') }}">Sydney, Australia</a></span>
+                                        </div> 
+                                    </div>                                  
+                                    <div class="clear"></div>                                                                  
+                                </div>
+                            </div>
+                            <!--/ widget_products -->
+
+                        </div>
+                        <!--/ widgets area, col 1 -->    
+
+                        <!--# widgets area, col 2 -->
+                        <div class="widgetarea widget_col_2">
+
+                            <!-- widget_newsletter -->
+                            <div class="widget-container newsletterBox">
+                                <div class="inner">
+                                    <h3>NEWSLETTER SIGNUP:</h3>
+                                    <form method="get" action="#">
+                                        <input type="text" value="Enter your email address" onfocus="if (this.value == 'Enter your email address') {
+                                                    this.value = '';
+                                                }" onblur="if (this.value == '') {
+                                                            this.value = 'Enter your email address';
+                                                        }" name="email" class="inputField">				                    
+                                        <div class="rowCheckbox input_styled checklist">
+                                            <input type="checkbox" name="subscribe" id="subscribe" value="1"> <label for="subscribe">Subscribe to RSS</label>
+                                        </div>
+                                        <input type="submit" value="SUBMIT" class="btn-submit">
+                                    </form>     
+                                </div>
+                            </div>
+                            <!--/ widget_newsletter -->
+
+                        </div>
+                        <!--/ widgets area, col 2 -->
+
+                        <!--# widgets area, col 3 -->
+                        <div class="widgetarea widget_col_3">
+
+                            <!-- widget_twitter -->            
+                            <div class="widget-container widget_twitter">
+                                <h3>TWITTER FEED:</h3>   
+
+                                <div class="tweet_item">
+                                    <div class="tweet_image"><img src="{{ asset('images/temp/twitter_avatar.png') }}" width="30" height="30" alt=""></div>
+                                    <div class="tweet_text">
+                                        <div class="inner">
+                                            How the Explosion in Online’s Education can be the Revolution for your Business: <a href="{{ asset('#') }}">ow.ly/aFK40</a>
+                                            <br><a href="{{ asset('#') }}" class="tweet_author">#blogging</a>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>   
+
+                                <a href="{{ asset('#') }}" class="fallow">Follow us</a>
+                            </div>
+                            <!--/ widget_twitter -->
+                        </div>
+                        <!--/ widgets area, col 3 -->
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!--/ after content -->
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="footer_inner">
+                    <div class="container_12">
+
+                        <!--# footer col 1 -->
+                        <div class="widgetarea f_col_1">
+
+                            <!-- widget_categories -->
+                            <div class="widget-container widget_categories">
+                                <h3 class="widget-title">WORLD DESTINATIONS:</h3>
+                                <ul>
+                                    <li><a href="{{ asset('#') }}"><span>AFRICA</span></a></li>
+                                    <li><a href="{{ asset('#') }}"><span>NORTH AMERICA</span></a></li>
+                                    <li><a href="{{ asset('#') }}"><span>AUSTRALIA</span></a></li>
+                                    <li><a href="{{ asset('#') }}"><span>CENTRAL  AMERICA</span></a></li>
+                                    <li><a href="{{ asset('#') }}"><span>ASIA & PACIFIC</span></a></li>
+                                    <li><a href="{{ asset('#') }}"><span>SOUTH AMERICA</span></a></li>
+                                    <li><a href="{{ asset('#') }}"><span>EUROPE</span></a></li>
+                                    <li><a href="{{ asset('#') }}"><span>CARRIBEAN</span></a></li>
+                                    <li><a href="{{ asset('#') }}"><span>MIDDLE EAST</span></a></li>
+                                    <li class="item-search"><a href="{{ asset('#') }}"><span>Search for more</span></a></li>
+                                </ul>
+                            </div>  
+                            <!--/ widget_categories -->
+
+                        </div>
+                        <!--/ footer col 1 -->
+
+                        <!--# footer col 2 -->
+                        <div class="widgetarea f_col_2">
+
+                            <div class="widget-container widget_pages">
+                                <h3 class="widget-title">USEFUL LINKS:</h3>
+                                <ul>
+
+                                    <li><a href="{{ path('pi_general_about_us') }}">About us</a></li>
+                                    <li><a href="{{ asset('#') }}">Contact us</a></li>
+                                    <li><a href="{{ path('pi_general_blog') }}">Our Blog</a></li>
+                                    <li><a href="{{ asset('#') }}">TERMS OF SERVICE</a></li>
+                                    <li><a href="{{ asset('#') }}">PRIVACY POLICY</a></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <!--/ footer col 2 -->
+
+
+                        <!--# footer col 3 -->
+                        <div class="widgetarea f_col_3">
+
+                            <!-- widget_contact -->
+                            <div class="widget-container widget_contact">   
+                                <h3 class="widget-title">CONNECT WITH US</h3>
+                                <div class="inner">   
+
+                                    <div class="contact-social">
+                                        <div><strong>Call us:</strong> <br> <a href="{{ asset('#') }}" class="btn btn_skype">Skype</a></div>
+                                        <div><strong>Follow us:</strong> <br> <a href="{{ asset('#') }}" class="btn btn_twitter">Twitter</a></div>
+                                        <div><strong>Join us:</strong> <br> <a href="{{ asset('#') }}" class="btn btn_fb">Facebook</a></div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="contact-address">
+                                        <div class="phone"><em>Phone:</em> <span>555-522.326</span></div>
+                                        <div class="fax"><em>Fax:</em> <span>555-345.285</span></div>
+                                        <div class="mail"><em>Email:</em> <a href="{{ asset('mailto:contact@travelagency.com') }}">contact@travelagency.com</a></div>
+                                    </div>
+
+                                </div>     
+                            </div>
+                            <!--/ widget_contact -->
+
+                        </div>
+                        <!--/ footer col 3 -->
+
+
+                        <div class="copyright">
+                            <p class="alignleft">copyright 2012 - Travel  Agency WordPress theme</p>
+                            <p>Created by <a href="{{ asset('http://themefuse.com') }}">Themefuse</a> - Premium WordPress themes</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/ footer -->
+
+        {% endblock %}
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

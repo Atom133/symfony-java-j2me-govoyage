@@ -1,0 +1,119 @@
+pi_general_home:
+    path:     /
+    defaults: { _controller: "PiGeneralBundle:Default:index", _format: html }
+    requirements: 
+        _format: html
+    
+    
+pi_general_hotels:
+    path:     /hotels.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:hotels", _format: html  }
+    requirements: 
+        _format: html
+        id : \d+
+pi_general_billets:
+    path:     /billets.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:flights", _format: html  }
+    requirements: 
+        _format: html
+        
+pi_general_blog:
+    path:     /blog.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:blog", _format: html  }
+    requirements: 
+        _format: html     
+        
+pi_general_blog_details:
+    path:     /blog_details.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:blog_details", _format: html  }
+    requirements: 
+        _format: html   
+        
+pi_general_about_us:
+    path:     /about_us.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:aboutUs", _format: html  }
+    requirements: 
+        _format: html 
+        
+pi_general_contact_us:
+    path:     /contact_us.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:contactUs", _format: html  }
+    requirements: 
+        _format: html        
+        
+pi_general_Holidays:
+    path:     /holidays.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:OffersList", _format: html  }
+    requirements: 
+        _format: html       
+        
+pi_general_Holiday_detail:
+    path:     /holiday_details.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:OfferDetail", _format: html  }
+    requirements: 
+        _format: html               
+pi_general_basic_tables:
+    path:    /basic_tables.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:basic_tables", _format: html   }
+    requirements: 
+        _format: html  
+pi_general_compose:
+    path:    /compose.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:compose", _format: html   }
+    requirements: 
+        _format: html
+pi_general_forms:
+    path:    /forms.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:forms", _format: html   }
+    requirements: 
+        _format: html
+pi_general_graphs:
+    path:    /graphs.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:graphs", _format: html   }
+    requirements: 
+        _format: html
+pi_general_grids:
+    path:    /guides.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:guides", _format: html   }
+    requirements: 
+        _format: html
+pi_general_inbox:
+    path:    /inbox.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:inbox", _format: html   }
+    requirements: 
+        _format: html
+pi_general_login:
+    path:    /login.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:login", _format: html   }
+    requirements: 
+        _format: html
+pi_general_media:
+    path:    /media.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:media", _format: html   }
+    requirements: 
+        _format: html
+pi_general_index:
+    path:    /index.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:index1", _format: html   }
+    requirements: 
+        _format: html
+pi_general_register:
+    path:    /register.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:register", _format: html   }
+    requirements: 
+        _format: html
+pi_general_validation:
+    path:    /validation.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:validation", _format: html   }
+    requirements: 
+        _format: html
+pi_general_widgets:
+    path:    /widgets.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:widgets", _format: html   }
+    requirements: 
+        _format: html
+pi_general_yypography:
+    path:    /yypography.{_format}
+    defaults: { _controller: "PiGeneralBundle:Default:yypography", _format: html   }
+    requirements: 
+        _format: html

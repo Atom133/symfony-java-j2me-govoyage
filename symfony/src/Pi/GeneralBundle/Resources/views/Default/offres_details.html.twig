@@ -1,0 +1,629 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}<title>GoVoyage | Offre_details</title>{% endblock %}
+{% block body %}
+    <!-- before content -->
+    <div class="before_content">
+        <div class="before_inner">
+            <div class="container_12">
+
+                <div class="title">			
+                    <span class="title_right"><a href="#">See all Holiday offers</a> <span class="separator">|</span> <a href="#">See all Special offers</a></span>
+                </div>
+
+                <div class="search_main">
+                    <form action="#" method="get" class="form_search">
+
+                        <div class="search_col_1">
+
+                            <div class="row rowInput">
+                                <label>DESTINATION:</label>
+                                <input type="text" name="city_from" class="inputField" value="City, Resort, etc" onfocus="if (this.value == 'City, Resort, etc') {
+                                            this.value = '';
+                                        }" onblur="if (this.value == '') {
+                                                    this.value = 'City, Resort, etc';
+                                                }">
+                            </div>
+
+                            <div class="row">
+                                <input type="text" name="date_in" class="inputField" value="Check-in date" onfocus="if (this.value == 'Check-in date') {
+                                            this.value = '';
+                                        }" onblur="if (this.value == '') {
+                                                    this.value = 'Check-in date';
+                                                }" id="date_in">
+                                <span class="input_icon"></span>
+                            </div>
+
+                            <div class="row">
+                                <input type="text" name="date_out" class="inputField" value="Check-out date" onfocus="if (this.value == 'Check-out date') {
+                                            this.value = '';
+                                        }" onblur="if (this.value == '') {
+                                                    this.value = 'Check-out date';
+                                                }" id="date_out">
+                                <span class="input_icon"></span>
+                            </div>                    
+
+                            <div class="row rowSubmit"><input type="submit" value="FIND VACATIONS" class="btn btn-find"></div>
+
+                        </div>
+
+                        <div class="clear"></div>
+                    </form>
+                    <script>
+                        jQuery(document).ready(function ($) {
+                            $("#date_in, #date_out").datepicker({
+                                dateFormat: 'MM dd, yy',
+                                minDate: 0,
+                                showOtherMonths: true
+                            });
+                        });
+                    </script>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/ before content -->
+
+    <div id="middle" class="cols2">
+        <div class="container_12">
+
+            <!-- breadcrumbs -->
+            <div class="breadcrumbs">
+                <p><a href="index.html">Homepage</a> <span class="separator">&gt;</span> <a href="offers-list.html">Holidays</a> <span class="separator">&gt;</span> <a href="offers-list.html">Asia & Pacific</a> <span class="separator">&gt;</span> <span>Carribean Honeymoon - The Crane Residential Resort</span></p>  
+            </div>
+            <!--/ breadcrumbs -->
+
+            <div class="title">
+                <h1>CARRIBEAN HONEYMOON - <span>The Crane Residential Resort</span></h1>
+                <span class="title_right count"><a href="#" class="link-map">Saint Philip, Barbados</a></span>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="gal-wrap">
+
+                <div id="gallery" class="gal-content">				
+                    <div class="slideshow-container">
+                        <div id="loading" class="loader"></div>
+                        <div id="slideshow" class="gal-slideshow"></div>
+                        <div id="caption" class="caption-container"></div>
+                    </div>				
+                </div>
+
+                <div class="gal-right">
+                    <div id="thumbs" class="gal-nav">
+                        <ul class="thumbs noscript">
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_01.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_01_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_01.jpg') }}" class="enlarge" data-rel="prettyPhoto" title="The Crane goes beyond the typical Caribbean vacation packages, and offers unparalleled luxury">View Large</a>
+                                    <div class="image-desciption">The Crane goes beyond the typical Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_02.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_02_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_02.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_03.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_03_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_03.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">Vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li> 
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_04.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_04_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_04.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">The Crane goes beyond the typical Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_05.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_05_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_05.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">The Crane goes beyond the typical Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_06.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_06_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_06.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_07.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_07_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_07.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">Vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li> 
+                            <li>
+                                <a class="thumb" href{{ asset('images/temp/offer_big_08.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_08_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_08.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">The Crane goes beyond the typical Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li> 
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_09.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_09_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_09.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_10.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_10_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_10.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="{{ asset('image-desciption') }}">Vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li> 
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_11.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_11_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_11.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">The Crane goes beyond the typical Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>  
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_12.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_12_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_12.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">The Crane goes beyond the typical Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li> 
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_13.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_13_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_13.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">Caribbean vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_14.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_14_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_14.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">Vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li> 
+                            <li>
+                                <a class="thumb" href="{{ asset('images/temp/offer_big_15.jpg') }}">
+                                    <img src="{{ asset('images/temp/offer_big_15_thumb.jpg') }}" alt="">
+                                </a>
+                                <div class="caption">
+                                    <a href="{{ asset('images/temp/offer_big_15.jpg') }}" class="enlarge" data-rel="prettyPhoto">View Large</a>
+                                    <div class="image-desciption">Vacation packages, and offers unparalleled luxury</div>
+                                </div>
+                            </li>                 
+                        </ul>                  
+                    </div>
+
+                    <div id="controls" class="controls"></div>            
+
+                </div>
+                <div class="clear"></div>  
+
+            </div>
+            <script>
+                jQuery(document).ready(function ($) {
+                    var onMouseOutOpacity = 0.67;
+                    $('#thumbs ul.thumbs li').opacityrollover({
+                        mouseOutOpacity: onMouseOutOpacity,
+                        mouseOverOpacity: 1.0,
+                        fadeSpeed: 'fast',
+                        exemptionSelector: '.selected'
+                    });
+                    var captionOpacity = 0.70;
+                    // Initialize Advanced Galleriffic Gallery
+                    var gallery = $('#thumbs').galleriffic({
+                        delay: 2500,
+                        numThumbs: 9,
+                        preloadAhead: 3,
+                        enableTopPager: false,
+                        enableBottomPager: true,
+                        maxPagesToShow: 7,
+                        imageContainerSel: '#slideshow',
+                        controlsContainerSel: '#controls',
+                        captionContainerSel: '#caption',
+                        loadingContainerSel: '#loading',
+                        renderSSControls: true,
+                        renderNavControls: true,
+                        playLinkText: 'Play',
+                        pauseLinkText: 'Pause',
+                        prevLinkText: '&lsaquo; Previous',
+                        nextLinkText: 'Next &rsaquo;',
+                        nextPageLinkText: 'Next &rsaquo;',
+                        prevPageLinkText: '&lsaquo; Prev',
+                        enableHistory: false,
+                        autoStart: false,
+                        syncTransitions: true,
+                        defaultTransitionDuration: 900,
+                        onSlideChange: function (prevIndex, nextIndex) {
+                            // 'this' refers to the gallery, which is an extension of $('#thumbs')
+                            this.find('ul.thumbs').children()
+                                    .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+                                    .eq(nextIndex).fadeTo('fast', 1.0);
+                        },
+                        onTransitionOut: function (slide, caption, isSync, callback) {
+                            slide.fadeTo(this.getDefaultTransitionDuration(isSync), 0.0, callback);
+                            caption.fadeTo(this.getDefaultTransitionDuration(isSync), 0.0);
+                        },
+                        onTransitionIn: function (slide, caption, isSync) {
+                            var duration = this.getDefaultTransitionDuration(isSync);
+                            slide.fadeTo(duration, 1.0);
+
+                            // Position the caption at the bottom of the image and set its opacity
+                            var slideImage = slide.find('img');
+                            caption.width(slideImage.width())
+                                    .css({
+                                        'bottom': Math.floor((slide.height() - slideImage.outerHeight()) / 2),
+                                        'left': Math.floor((slide.width() - slideImage.width()) / 2) + slideImage.outerWidth() - slideImage.width()
+                                    })
+                                    .fadeTo(duration, captionOpacity);
+                            $('#caption a[data-rel]').each(function () {
+                                $(this).attr('rel', $(this).data('rel'));
+                            });
+                            $("#caption a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
+                        },
+                        onPageTransitionOut: function (callback) {
+                            this.fadeTo('fast', 0.0, callback);
+                        },
+                        onPageTransitionIn: function () {
+                            this.fadeTo('fast', 1.0);
+                        }
+                    });
+                });
+            </script>
+            <!--/ Photo Gallery -->
+
+            <!-- content -->
+            <div class="content">
+
+                <!-- offers tabs -->
+                <div class="tabs_products">
+
+                    <ul class="tabs linked">
+                        <li><a href="#tab_overview">Overview</a></li>
+                        <li><a href="#tab_atractions">Atractions</a></li>
+                        <li><a href="#tab_map">Maps & Area</a></li>
+                        <li><a href="#tabs_notincl">Not Included</a></li>
+                    </ul>
+
+                    <!-- overview -->
+                    <div class="tabcontent">
+
+                        <h2>Package Includes:</h2>
+
+                        <div class="title2">
+                            <h3>7 nights, Breakfast included at <span>The Crane Residential Resort</span></h3>
+                            <span class="title_right"><a href="#">+ more details</a></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col col_1_2">
+                                <p>This elegant beachfront retreat offers modern facilities and high quality accommodation. Set on a private beach in Sharks Bay overlooking Tiran Island, it's a wonderful place to bask in the sunshine or experience the snorkelling and scuba-diving for which Sharm is renowned around the world. </p>
+                            </div>
+
+                            <div class="col col_1_2">
+                                <div class="list_check bolded">       
+                                    <ul>
+                                        <li>3 Separate Swimming Pools</li>                                        
+                                        <li>High-speed Internet access</li>
+                                        <li>Multiple 5 star restaurants in the resort </li>
+                                        <li>Separate bathtub and shower</li>
+                                        <li>Shopping center shuttle (complimentary)</li>                                        
+                                    </ul>
+                                </div>
+                            </div>                                
+                        </div>
+                        <div class="divider_space_thin"></div>
+
+                        <div class="title2">
+                            <h3>Flights from London with <span>British Airways</span></h3>
+                            <span class="title_right"><a href="#">+ more details</a></span>
+                        </div>
+
+                        <div class="table_small">
+                            <table>
+                                <tr>
+                                    <th>FLIGHT FROM</th>
+                                    <th>DESTINATION</th>
+                                    <th>Date</th>
+                                    <th>departs</th>
+                                    <th>arrives</th>
+                                    <th class="text-right">FLIGHT TAXES</th>
+                                </tr>
+                                <tr>
+                                    <td>London Gatwick, UK</td>
+                                    <td>Saint Philipe, Barbados</td>
+                                    <td>July 12 2012</td>
+                                    <td>09:25</td>
+                                    <td>18:40</td>
+                                    <td class="text-right">Included</td>
+                                </tr>
+                                <tr>
+                                    <td>Saint Philipe, Barbados</td>
+                                    <td>London Gatwick, UK</td>
+                                    <td>July 19 2012</td>
+                                    <td>11:30</td>
+                                    <td>23:10</td>
+                                    <td class="text-right">Included</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="divider"></div>          	                  
+
+                        <div class="notice-arrow"><a href="#package">for other Departure dates, check the calendar on the sidebar</a></div>
+
+                        <h2>Hotel Overview:</h2>
+
+                        <div class="title2">
+                            <h3><span>One-Bedroom Garden Deluxe Park</span></h3>
+                        </div>
+
+                        <p><strong>ROOM DETAILS:</strong></p>
+
+                        <div class="list_check list_details">       
+                            <ul>
+                                <li><strong>One-Bedroom Garden Deluxe Park</strong> rooms are 1,200 square feet and feature a mater bedroom, an en suite bathroom with a Jacuzzi tub and separate shower, a fully equipped kitchen (refrigerator, ice dispenser, stove and oven, utensils for four, microwave and dishwasher), a seating area with a sofabed and a large patrio with garden views.</li>                                        
+                                <li><strong>Maximum Occupancy</strong>: Four (Rates quoted are for two people. There is a cost to add additional children or adults to this room; see policies below.)</li>
+                                <li><strong>Bed Type</strong>: One King plus one sofabed</li>
+                                <li><strong>Children Policy</strong>: Children two and under are permitted within maximum occupancy at no additional cost using existing bedding. Up to two children three to 12 are permitted in addition to the double occupancy for $40 per child, per night, using existing bedding or a roll-away bed (for an additional cost).</li>
+                                <li><strong>Additional Adult Policy</strong>: Up to two adults 13 and over are prmitted in addition to the double occupancy for $40 per adult, per night, using existing bedding or a roll-away bed (for an additional cost).Roll-away beds are based on availability and cannot be guaranteed; they can be requested for $5 per bed, per night.</li>                                        
+                                <li><strong>Additional Person</strong>: and bedding fees will be collected by the property. For additional person and bedding requests, please highlight in the Special Instructions field after purchase.</li>
+                                <li><strong>Handicap-Accessible</strong>: No, the resort is not accesible by wheel chair.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--/ overview -->
+                    <!-- Atractions -->
+                    <div class="tabcontent">
+
+                        <h2>Available Atractions</h2>
+
+                        <div class="title2">
+                            <h3>Shipwreck Underwater <span>Sea Trek Walk</span></h3>                                
+                            <span class="title_right"><a href="#">+ more details</a></span>
+                        </div>
+
+                        <div class="atraction_image">
+                            <img src="{{ asset('images/temp/atraction_1.jpg') }}" width="214" height="135" alt="">
+                        </div>
+                        <div class="atraction_text">
+                            <p>Xcaret Sea Trek, our spectacular underwater walk, is the simplest and most natural way to interact with the wonders of the underwater world at Xcaret Cancun. </p>
+                            <p>All you need is your swimsuit and we'll provide you with a helmet with which you can breathe normally underwater without even getting your hair wet - highly recomended.</p>
+                        </div>   
+                        <div class="divider_space_thin"></div>
+
+                        <div class="title2">
+                            <h3>Sailing around <span>Isla de Mujeres</span> island</h3>
+                            <span class="title_right"><a href="#">+ more details</a></span>
+                        </div>
+
+                        <div class="atraction_image">
+                            <img src="{{ asset('images/temp/atraction_2.jpg') }}" width="214" height="135" alt="">
+                        </div>
+                        <div class="atraction_text">
+                            <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
+                        </div>  
+                        <div class="divider_space_thin"></div>
+
+                        <div class="title2">
+                            <h3>Dine in our <span>La Campanilla</span> 5-star Restaurant</h3>
+                            <span class="title_right"><a href="#">+ more details</a></span>
+                        </div>
+
+                        <div class="atraction_image">
+                            <img src="{{ asset('images/temp/atraction_3.jpg') }}" width="214" height="135" alt="">
+                        </div>
+                        <div class="atraction_text">
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
+                            <p>Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus.</p>
+                        </div>  
+                        <div class="divider_space_thin"></div>
+
+                        <div class="title2">
+                            <h3>Visit the <span>Chichen Itza</span> Mayan Pyramid</h3>
+                            <span class="title_right"><a href="#">+ more details</a></span>
+                        </div>
+
+                        <div class="atraction_image">
+                            <img src="{{ asset('images/temp/atraction_4.jpg') }}" width="214" height="135" alt="">
+                        </div>
+                        <div class="atraction_text">
+                            <p>Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla.</p>
+                        </div>  
+                        <div class="divider_space_thin"></div>
+
+                    </div>
+                    <!--/ Atractions -->
+                    <!-- Maps -->
+                    <div class="tabcontent">
+
+
+                        <h2>MAPS & AREA</h2>
+
+                        <div class="title2">
+                            <h3>Map view for  <span>The Crane, St Philip - Barbados</span></h3>
+                            <span class="title_right"><a href="#">+ OPEN FULL MAP</a></span>
+                        </div>	   
+
+                        <p><img src="{{ asset('images/temp/map_big.jpg') }}" width="620" height="420" alt=""></p>
+
+                        <p> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                            Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus dolor sit amet deritium.</p>
+
+                        <p>Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. </p>
+
+                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante.</p>
+
+
+                    </div>
+                    <!--/ Maps -->
+                    <!-- Not Included -->
+                    <div class="tabcontent">
+                        <h2>Hotel Overview:</h2>
+
+                        <div class="title2">
+                            <h3><span>List of Not Included items for your package:</span></h3>
+                        </div>
+
+
+                        <div class="list_delete list_details">       
+                            <ul>
+
+                                <li><strong>Bed Type</strong>: One King plus one sofabed</li>
+                                <li><strong>Children Policy</strong>: Children two and under are permitted within maximum occupancy at no additional cost using existing bedding. Up to two children three to 12 are permitted in addition to the double occupancy for $40 per child, per night, using existing bedding or a roll-away bed (for an additional cost).</li>
+                                <li><strong>Additional Adult Policy</strong>: Up to two adults 13 and over are prmitted in addition to the double occupancy for $40 per adult, per night, using existing bedding or a roll-away bed (for an additional cost).Roll-away beds are based on availability and cannot be guaranteed; they can be requested for $5 per bed, per night.</li>                                        
+                                <li><strong>Additional Person</strong>: and bedding fees will be collected by the property. For additional person and bedding requests, please highlight in the Special Instructions field after purchase.</li>
+                                <li><strong>Handicap-Accessible</strong>: No, the resort is not accesible by wheel chair.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--/ Not Included -->                    
+
+                </div>
+                <!--/ offers tabs -->
+
+            </div>
+            <!--/ content -->
+
+            <!-- sidebar -->
+            <div class="sidebar">
+
+                <!-- filter -->
+                <div class="widget-container widget_item_info" id="package">
+                    <h3 class="widget-title">PACKAGE PRICE:</h3>
+                    <span class="price"><em>from</em> <ins>$</ins><strong>3790</strong></span>
+
+                    <form action="#" method="get" class="form_white">
+
+                        <div class="row rowCalendar">                        	
+                            <input type="text" name="date_departure" class="inputField" value="" id="date_departure">
+                            <p>
+                                <span class="date_available">available departure dates</span><br>
+                                <span class="date_selected">your selected date</span>                            
+                            </p>
+                        </div>         
+
+                        <div class="row rowSelect" style="z-index:2">
+                            <label class="label_title">Room Type:</label>
+                            <select class="select_styled" name="room_type" id="room_type">
+                                <option value="1">Single Room (1 pers)</option>
+                                <option value="2" selected>Double Room (2 pers)</option>
+                                <option value="3">Triple Room (3 pers)</option>
+                                <option value="4">Delux suite (2 pers)</option>
+                                <option value="5">Family room (4 pers)</option>
+                            </select>	                        
+                        </div> 
+
+                        <div class="row rowSelect" style="z-index:1">
+                            <label class="label_title">Insurance:</label>
+                            <select class="select_styled" name="insurance" id="insurance">
+                                <option value="no" selected>None, i'll get my own</option>
+                                <option value="1">Yes, InterMedical</option>
+                                <option value="2">Yes, WorldMed</option>
+                            </select>	                        
+                        </div>        	                                     	                                     
+
+                        <div class="row rowSubmit">
+                            <input type="submit" value="BOOK NOW" class="btn-submit">
+                        </div>
+
+                    </form>   
+
+                    <script>
+                        // <![CDATA[
+                        jQuery(document).ready(function ($) {
+                            var activeDates = ["2012-6-16", "2012-6-19", "2012-6-29", "2012-6-25", "2012-7-5", "2012-7-10"];
+                            var daysRange = 5;
+
+                            function assignCalendar(id) {
+                                $('<div class="calendar" />')
+                                        .insertAfter($(id))
+                                        .multiDatesPicker({
+                                            addDates: activeDates,
+                                            dateFormat: 'yy-mm-dd',
+                                            minDate: new Date(),
+                                            maxDate: '+1y',
+                                            altField: id,
+                                            firstDay: 1,
+                                            showOtherMonths: true
+                                        }).prev().hide();
+                            }
+
+                            assignCalendar('#date_departure');
+                        });
+                        // ]]>
+                    </script>     
+
+
+                </div>
+                <!--/ filter -->
+
+                <!-- widget_newsletter -->
+                <div class="widget-container newsletterBox">
+                    <div class="inner">
+                        <h3>Subscribe to Newsletter:</h3>
+                        <form method="get" action="#">
+                            <input type="text" value="Enter your email address" onfocus="if (this.value == 'Enter your email address') {
+                                        this.value = '';
+                                    }" onblur="if (this.value == '') {
+                                                this.value = 'Enter your email address';
+                                            }" name="email" class="inputField">				                    
+                            <div class="rowCheckbox input_styled checklist">
+                                <input type="checkbox" name="subscribe" id="subscribe" value="1"> <label for="subscribe">Subscribe to RSS</label>
+                            </div>
+                            <input type="submit" value="SUBMIT" class="btn-submit">
+                            <div class="clear"></div>
+                        </form>     
+
+                    </div>
+                </div>
+                <!--/ widget_newsletter -->
+
+            </div>
+            <!--/ sidebar -->
+
+            <div class="clear"></div>        
+        </div>
+    </div>
+    <!--/ middle -->
+{% endblock %}

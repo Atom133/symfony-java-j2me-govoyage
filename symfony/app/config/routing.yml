@@ -1,0 +1,8 @@
+personne:
+    resource: "@PersonneBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pi_general:
+    resource: "@PiGeneralBundle/Resources/config/routing.yml"
+    prefix:   /
+

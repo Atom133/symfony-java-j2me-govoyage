@@ -1,0 +1,327 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}<title>GoVoyage | Holidays_offers</title>{% endblock %}
+{% block body %}
+    	<!-- before content -->
+<div class="before_content">
+<div class="before_inner">
+	<div class="container_12">
+    	
+        <div class="title">			
+            <span class="title_right"><a href="#">See all Holiday offers</a> <span class="separator">|</span> <a href="#">See all Special offers</a></span>
+        </div>
+        
+        <div class="search_main">
+        	<form action="#" method="get" class="form_search">
+            	
+                <div class="search_col_1">
+                	
+                   	<div class="row rowInput">
+                    	<label>DESTINATION:</label>
+                        <input type="text" name="city_from" class="inputField" value="City, Resort, etc" onfocus="if (this.value == 'City, Resort, etc') {this.value = '';}" onblur="if (this.value == '') {this.value = 'City, Resort, etc';}">
+                    </div>
+                    
+                    <div class="row">
+                        <input type="text" name="date_in" class="inputField" value="Check-in date" onfocus="if (this.value == 'Check-in date') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Check-in date';}" id="date_in">
+                        <span class="input_icon"></span>
+                    </div>
+                    
+                    <div class="row">
+                        <input type="text" name="date_out" class="inputField" value="Check-out date" onfocus="if (this.value == 'Check-out date') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Check-out date';}" id="date_out">
+                        <span class="input_icon"></span>
+                    </div>                    
+                    
+                    <div class="row rowSubmit"><input type="submit" value="FIND VACATIONS" class="btn btn-find"></div>
+                    
+                </div>
+                
+                <div class="clear"></div>
+            </form>            
+        </div>
+        
+    </div>
+</div>
+</div>
+<!--/ before content -->
+
+<div id="middle" class="cols2">
+	<div class="container_12">
+    
+		<!-- breadcrumbs -->
+        <div class="breadcrumbs">
+        	<p><a href="index.html">Homepage</a> <span class="separator">&gt;</span> <a href="offers-list.html">Holidays</a> <span class="separator">&gt;</span> <span>Asia & Pacific</span></p>
+        </div>
+        <!--/ breadcrumbs -->
+        
+        <!-- content -->
+        <div class="content">
+        	
+            <div class="title">
+	        	<h1>HOLIDAYS IN <span>ASIA & SOUTH PACIFIC</span></h1>
+                <span class="title_right count">374 available offers</span>
+	    	</div>
+        	
+            <!-- sorting, pages -->
+	        <div class="block_hr list_manage">
+	                	<form action="#" method="post" class="form_sort">
+			            	<span class="manage_title">Sort by:</span>
+								<select class="select_styled white_select" name="sort_list" id="sort_list">
+			                    	<option value="1">Latest Added</option>
+									<option value="2" selected>Price High - Low</option>
+			                        <option value="3">Price Low - Hight</option>
+			                        <option value="4">Names A-Z</option>
+			                        <option value="5">Names Z-A</option>
+			                    </select>
+			            </form>    
+			            
+			            <div class="pages_jump">
+			            	<span class="manage_title">Jump to page:</span>
+			                <form action="#" method="post">
+			                	<input type="text" name="jumptopage" value="15" class="inputSmall"><input type="submit" class="btn-arrow" value="Go">
+			                </form>
+			            </div>
+			            
+			            <div class="pages">
+			            	<span class="manage_title">Page: &nbsp;<strong>1 of 25</strong></span> <a href="#" class="link_prev">Previous</a><a href="#" class="link_next">Next</a>
+			            </div> 
+	                    
+	                    <div class="clear"></div>
+	        </div>
+          	<!--/ sorting, pages -->
+          
+          	<!-- offers list -->
+			<div class="re-list">
+        
+	            <div class="re-item">        	
+	                <div class="re-image">
+                    	<a href="{{ path('pi_general_Holiday_detail') }}"><img src="{{ asset('images/temp/offer_mid_01.jpg') }}" alt=""><span class="caption">View More Details</span></a>
+                    </div>
+                    
+	                <div class="re-short">            	
+	                    <div class="re-top">
+	                        <h2><a href="{{ asset('offer-details.html') }}">Thailand - Koh Samui Honeymoon</a></h2>
+                            <div class="re-subtitle">Hotel: <strong>Dreams Villa Resort 4*</strong> (7 nights)</div>
+	                    </div>                
+	                    <div class="re-descr">
+	                        <p>As its name suggests‚ this modern hotel has an ideal located at the entrance to the stylish Abu Tig Marina and is almost surrounded by the sea offers a superb range of facilities. </p>
+	                    </div>                
+	                    
+	                </div>
+					<div class="re-bot">
+                        	<span class="re-price">Price: <strong>$1399</strong></span>
+	                    	<a href="{{ asset('offer-details.html#tab_map') }}" class="link-viewmap" title="View on Map">View Map</a> 
+                        	<a href="{{ asset('offer-details.html') }}" class="link-viewimages" title="View Photos">Photos</a>
+	                </div>
+	                <div class="clear"></div>
+	            </div>
+                
+                <div class="re-item">        	
+	                <div class="re-image">
+                    	<a href="{{ asset('offer-details.html') }}"><img src="{{ asset('images/temp/offer_mid_02.jpg') }}" alt=""><span class="caption">View More Details</span></a>
+                    </div>
+                    
+	                <div class="re-short">            	
+	                    <div class="re-top">
+	                        <h2><a href="{{ asset('offer-details.html') }}">Singapore - Sentosa Aquapark</a></h2>
+                            <div class="re-subtitle">Hotel: <strong>Grand Mercure Sentosa 4*</strong> (5 nights)</div>
+	                    </div>                
+	                    <div class="re-descr">
+	                        <p>A beachfront property set within beautiful gardens, Les Orangers Beach Resort & Bungalows offers a superb range of facilities and fantastic standards of hospitality...</p>
+	                    </div>                	                    
+	                </div>
+					<div class="re-bot">
+                        	<span class="re-price">Price: <strong>$1270</strong></span>
+	                    	<a href="{{ asset('offer-details.html#tab_map') }}" class="link-viewmap" title="View on Map">View Map</a> 
+                        	<a href="{{ asset('offer-details.html') }}" class="link-viewimages" title="View Photos">Photos</a>
+	                </div>
+	                <div class="clear"></div>
+	            </div>
+                
+                <div class="re-item">        	
+	                <div class="re-image">
+                    	<a href="{{ asset('offer-details.html') }}"><img src="{{ asset('images/temp/offer_mid_03.jpg') }}" alt=""><span class="caption">View More Details</span></a>
+                    </div>
+                    
+	                <div class="re-short">            	
+	                    <div class="re-top">
+	                        <h2><a href="{{ asset('offer-details.html') }}">Malaysia - Langkawi Beach Resort</a></h2>
+                            <div class="re-subtitle">Hotel: <strong>Sunny Beach Gold Resort 4*</strong> (8 nights)</div>
+	                    </div>                
+	                    <div class="re-descr">
+	                        <p>Ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+	                    </div>               	                    
+	                </div>
+					<div class="re-bot">
+                        	<span class="re-price">Price: <strong>$970</strong></span>
+	                    	<a href="{{ asset('offer-details.html#tab_map') }}" class="link-viewmap" title="View on Map">View Map</a> 
+                        	<a href="{{ asset('offer-details.html') }}" class="link-viewimages" title="View Photos">Photos</a>
+	                </div>
+	                <div class="clear"></div>
+	            </div>
+                
+                <div class="re-item">        	
+	                <div class="re-image">
+                    	<a href="{{ asset('offer-details.html') }}"><img src="{{ asset('images/temp/offer_mid_04.jpg') }}" alt=""><span class="caption">View More Details</span></a>
+                    </div>
+                    
+	                <div class="re-short">            	
+	                    <div class="re-top">
+	                        <h2><a href="{{ asset('offer-details.html') }}">Australia - Sydney Tour</a></h2>
+                            <div class="re-subtitle">Hotel: <strong>Marriott Grand 4*</strong> (7 nights, All Inclusive)</div>
+	                    </div>                
+	                    <div class="re-descr">
+	                        <p>As its name suggests‚ this modern hotel has an ideal located at the entrance to the stylish Abu Tig Marina and is almost surrounded by the sea offers a superb range of facilities. </p>
+	                    </div>                	                    
+	                </div>
+					<div class="re-bot">
+                        	<span class="re-price">Price: <strong>$850</strong></span>
+	                    	<a href="{{ asset('offer-details.html#tab_map') }}" class="link-viewmap" title="View on Map">View Map</a> 
+                        	<a href="{{ asset('offer-details.html') }}" class="link-viewimages" title="View Photos">Photos</a>
+	                </div>
+	                <div class="clear"></div>
+	            </div>
+                
+                <div class="re-item">        	
+	                <div class="re-image">
+                    	<a href="{{ asset('offer-details.html') }}"><img src="{{ asset('images/temp/offer_mid_05.jpg') }}" alt=""><span class="caption">View More Details</span></a>
+                    </div>
+                    
+	                <div class="re-short">            	
+	                    <div class="re-top">
+	                        <h2><a href="{{ asset('offer-details.html') }}">New Zeeland - Honeymoon</a></h2>                           
+                            <div class="re-subtitle">Hotel: <strong>Marriott Grand 4*</strong> (7 nights, Flights & Hotel w. Breakfast)</div>
+	                    </div>                
+	                    <div class="re-descr">
+	                        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas.</p>
+	                    </div>                	                    
+	                </div>
+					<div class="re-bot">
+                        	<span class="re-price">Price: <strong>$820</strong></span>
+	                    	<a href="{{ asset('offer-details.html#tab_map') }}" class="link-viewmap" title="View on Map">View Map</a> 
+                        	<a href="{{ asset('offer-details.html') }}" class="link-viewimages" title="View Photos">Photos</a>
+	                </div>
+	                <div class="clear"></div>
+	            </div>
+                
+        	</div>
+            <!-- offers list -->
+            
+            <!-- sorting, pages -->
+	        <div class="block_hr list_manage">
+	                	<form action="#" method="post" class="form_sort">
+			            	<span class="manage_title">Sort by:</span>
+								<select class="select_styled white_select" name="sort_list" id="sort_list_bot">
+			                    	<option value="1">Latest Added</option>
+									<option value="2" selected>Price High - Low</option>
+			                        <option value="3">Price Low - Hight</option>
+			                        <option value="4">Names A-Z</option>
+			                        <option value="5">Names Z-A</option>
+			                    </select>
+			            </form>    
+			            
+			            <div class="pages_jump">
+			            	<span class="manage_title">Jump to page:</span>
+			                <form action="#" method="post">
+			                	<input type="text" name="jumptopage" value="15" class="inputSmall"><input type="submit" class="btn-arrow" value="Go">
+			                </form>
+			            </div>
+			            
+			            <div class="pages">
+			            	<span class="manage_title">Page: &nbsp;<strong>1 of 25</strong></span> <a href="#" class="link_prev">Previous</a><a href="#" class="link_next">Next</a>
+			            </div> 
+	                    
+	                    <div class="clear"></div>
+	        </div>
+          	<!--/ sorting, pages -->
+            
+        </div>
+        <!--/ content -->
+        
+        <!-- sidebar -->
+        <div class="sidebar">
+			
+            <!-- filter -->
+	        <div class="widget-container widget_adv_filter">
+				<h3 class="widget-title">FILTER THE RESULTS</h3>
+					
+	            	<form action="#" method="get" class="form_white">
+	                
+	                	<div class="row">
+	                    	<label class="label_title">Destination:</label>
+	                        <input type="text" name="location" value="expl:  Los Angeles, CA" class="inputField">
+	                    </div>
+                        
+                        <div class="row">
+                        	<label class="label_title">Check in:</label>
+	                        <input type="text" name="filter_date_in" class="inputField inputDate" value="choose date" onfocus="if (this.value == 'choose date') {this.value = '';}" onblur="if (this.value == '') {this.value = 'choose date';}" id="filter_date_in">
+	                        <span class="input_icon"></span>
+	                    </div>
+	                    
+	                    <div class="row">
+                        	<label class="label_title">Check out:</label>
+	                        <input type="text" name="filter_date_out" class="inputField inputDate" value="choose date" onfocus="if (this.value == 'choose date') {this.value = '';}" onblur="if (this.value == '') {this.value = 'choose date';}" id="filter_date_out">
+	                        <span class="input_icon"></span>
+	                    </div>
+	                    	                   
+	                    
+	                    <div class="row input_styled checklist">
+	                    	<label class="label_title2">DESTINATION:</label><br>                            
+	                        <input type="checkbox" name="filter_location_1" id="filter_location_1" value="1"> <label for="filter_location_1">Africa  (32)</label>
+	                        <input type="checkbox" name="filter_location_2" id="filter_location_2" value="2" checked> <label for="filter_location_2">Asia & South Pacific (49)</label>
+	                        <input type="checkbox" name="filter_location_3" id="filter_location_3" value="3"> <label for="filter_location_3">Central & South America  (56)</label>
+	                        <input type="checkbox" name="filter_location_4" id="filter_location_4" value="4"> <label for="filter_location_4">Europe  (31)</label>
+                            <input type="checkbox" name="filter_location_5" id="filter_location_5" value="5"> <label for="filter_location_5">Northe America  (23)</label>
+                            <input type="checkbox" name="filter_location_6" id="filter_location_6" value="6"> <label for="filter_location_6">Carribean  (46)</label>
+	                    </div>
+                        
+                        <div class="row rangeField">
+	                    	<label class="label_title2">PRICE RANGE:</label>
+	                        <div class="range-slider">
+				                <input id="price_range" type="text" name="price_range" value="100;2500">
+				            </div>                   
+				            <div class="clear"></div>
+	                    </div>
+	                    
+	                    <div class="row input_styled checklist">
+	                    	<label class="label_title2">HOTEL RATING:</label><br>
+	                        <input type="checkbox" name="filter_hotel_1" id="filter_hotel_1" value="1"> <label for="filter_hotel_1">1 Star (32)</label>
+	                        <input type="checkbox" name="filter_hotel_2" id="filter_hotel_2" value="2"> <label for="filter_hotel_2">2 Stars (19)</label>
+	                        <input type="checkbox" name="filter_hotel_3" id="filter_hotel_3" value="3" checked> <label for="filter_hotel_3">3 Stars  (56)</label>
+	                        <input type="checkbox" name="filter_hotel_4" id="filter_hotel_4" value="4" checked> <label for="filter_hotel_4">4 Stars  (31)</label>
+                            <input type="checkbox" name="filter_hotel_5" id="filter_hotel_5" value="5"> <label for="filter_hotel_5">5 Stars  (23)</label>
+                            <input type="checkbox" name="filter_hotel_6" id="filter_hotel_6" value="0"> <label for="filter_hotel_6">Unrated  (46)</label>
+	                    </div>	                    	                                     
+	                    
+	                    <div class="row rowSubmit">
+	                    	<input type="submit" value="FILTER RESULTS" class="btn-submit">
+	                    </div>
+	                    
+	                </form>    
+                    
+                    <script type="text/javascript" >
+							jQuery(document).ready(function($) {						
+								// Price Range Input
+	                     		$("#price_range").slider({ 
+						  			from: 100,
+									to: 10000,
+									limits: false, 
+									scale: ['$100', '$10k'],
+									heterogeneity: ['50/3000'],
+									step: 100,
+									smooth: true,
+									dimension: '$',
+									skin: "round_green"
+								});
+							});
+	            	</script>           
+			</div>
+	        <!--/ filter -->
+            
+        </div>
+        <!--/ sidebar -->
+        
+        <div class="clear"></div>        
+    </div>
+</div>
+<!--/ middle -->
+{% endblock %}    
